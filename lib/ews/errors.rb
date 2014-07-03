@@ -17,6 +17,9 @@
 =end
 
 module Viewpoint::EWS::Errors
+
+  class InvalidInputError < Exception; end
+
   class ResponseError < RuntimeError
     attr_reader :response
 
